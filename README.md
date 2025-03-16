@@ -1,1 +1,0 @@
-# akashpalandagama.github.io

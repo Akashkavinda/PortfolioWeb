@@ -1,0 +1,232 @@
+/* Modules */
+.color_ard{
+   color: #E23D28;
+}
+
+.color_backbone{
+    color: #3a506b;
+}
+
+.color_benchmarking{
+    color: #7d4f50;
+}
+
+.color_course_management{
+    color: #9966CC;
+}
+
+.color_digital_exam{
+    color: #FBCEB1;
+}
+
+.color_entity_management{
+    color: #FF9966;
+}
+
+.color_finance{
+    color: #0D98BA;
+}
+
+.color_hr{
+    color: #88d498;
+}
+
+.color_kpi_management{
+    color: #00CCCC;
+}
+
+.color_mou{
+    color: #0072BB;
+}
+
+.color_program_management{
+    color: #f95738;
+}
+
+.color_quality_assurance{
+    color: #cb997e;
+}
+
+.color_research_profile{
+    color: #a5a58d;
+}
+
+.color_rewarding_system{
+    color: #ffbc42;
+}
+
+.color_strategic_planning{
+    color: #abc4ff;
+}
+.color_sustainability{
+    color: #ff758f;
+}
+
+.color_top_management{
+    color: #FFBF00;
+}
+
+.color_workshop{
+    color: #0D98BA;
+}
+
+._community{
+    color: #b5838d;
+}
+
+
+._falcon_eye{
+    color: #ffb4a2;
+}
+
+._alumni{
+    color: #480ca8;
+}
+
+._ie{
+    color: #14213d;
+}
+
+._student_life{
+    color: #216869;
+
+}
+
+.institutional_indicator{
+    color:#69b8ff;
+}
+
+
+/* Badges */
+.badge-light-aue-theme {
+    color: white;
+    background-color: #F8BF36;
+    border-color: #F8BF36 ;
+}
+
+.badge-aue-theme{
+    color: white;
+    background-color: #C19740;
+}
+
+
+
+
+
+
+/* Button Colors */
+.btn-theme {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #C3A25A;
+    --bs-btn-border-color: #C3A25A;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #C19740;
+    --bs-btn-hover-border-color: #C3A25A;
+    --bs-btn-focus-shadow-rgb: 53, 128, 217;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #C19740;
+    --bs-btn-active-border-color: #C3A25A;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #C3A25A;
+    --bs-btn-disabled-border-color: #3E97FF
+}
+
+.link-theme {
+    color: #C3A25A !important;
+    text-decoration-color: #C3A25A !important;
+    box-shadow: 1.65776px 3.31553px 16.57763px 0px rgba(0, 0, 0, 0.18);
+}
+
+.link-theme:focus,
+.link-theme:hover {
+    color: #C19740 !important;
+    text-decoration-color:#C19740!important
+}
+
+
+
+
+
+
+
+
+/* Text Colors */
+
+.text-theme{
+    color: #C19740;
+}
+
+.text_aue_color{
+    color: #C19740;
+}
+
+.aue_text_2{
+    color : #FFB607;
+}
+
+
+
+
+
+
+
+
+
+/* Other Colors */
+
+.bg-aue-linear{
+    --bs-bg-opacity: 1;
+    background: linear-gradient(105deg, #F2D898 3.42%, #D2A52E 113.3%); background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important
+}
+
+.aue_bg_color{
+    color: #666666;
+}
+
+.bg-aue_theme_color {
+    background-color: #C3A25A;
+}
+
+.bg_theme {
+    --bs-bg-opacity: 1;
+    background-color: #C19740 !important
+}
+
+.aue_theme_color {
+    color: #C3A25A;
+}
+
+.bg-aue_theme_color{
+    background-color: #C3A25A;;
+}
+
+.aue_bg_color{
+    background-color: #666666;
+}
+
+.aue_bg_2{
+    background-color : #FFB607;
+}
+
+
+
+/* Correction Color */
+
+.bg-aue-primary{
+    background-color: #C3A25A;
+    ;
+}
+
+.bg-aue-light{
+    background-color: #FEF4CA;
+}
+
+.bg-aue-dark{
+    background-color: #E1A21A;
+}
+
+
+
+
+
