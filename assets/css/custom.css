@@ -576,6 +576,13 @@ ul {
     border-color: #ffe066;
 }
 
+.badge-3-orange {
+    background-color: #fceed8;
+    color: #EE9239;
+    border-color: #EE9239;
+}
+
+
 
 .modal {
     display: none;
