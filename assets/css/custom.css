@@ -570,6 +570,12 @@ ul {
     border-color: #c4a2ff;
 }
 
+.badge-3-dark {
+    background-color: #e7e7e7;
+    color: #454545;
+    border-color: #000;
+}
+
 .badge-3-yellow {
     background-color: #fff9e6;
     color: #d69e2e;
@@ -581,8 +587,6 @@ ul {
     color: #EE9239;
     border-color: #EE9239;
 }
-
-
 
 .modal {
     display: none;
