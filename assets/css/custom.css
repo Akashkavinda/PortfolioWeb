@@ -35,7 +35,6 @@ body {
 
 }
 
-/* Font Weights */
 .light-text {
     font-weight: 300;
     /* For subtle/secondary text */
@@ -564,6 +563,12 @@ ul {
     border-color: #ffb3b3;
 }
 
+.badge-3-dark-blue {
+    background-color: #dbedf2;
+    color: #223541;
+    border-color: #336d87;
+}
+
 .badge-3-purple {
     background-color: #ede6ff;
     color: #6a0dad;
@@ -771,5 +776,80 @@ ul {
 
     .nav-item span {
         font-size: 0.8rem;
+    }
+}
+
+
+/* Footer Styles */
+.footer-main {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+}
+
+.footer-content {
+    max-width: max-content !important;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-main p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Social Media Footer */
+.footer-bottom {
+    background-color: #072136; /* Slightly darker blue */
+    padding: 1rem 2rem;
+    margin-bottom: 50px;
+
+}
+
+.footer-bottom-content {
+    max-width: fit-content !important;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
     }
 }
