@@ -59,10 +59,10 @@ ul {
     background: var(--bg-white);
     min-height: 100vh;
     display: block;
-    padding: 0 80px;
+    padding: 0 100px;
     opacity: 1;
     position: fixed;
-    left: 220px;
+    left: 230px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -381,6 +381,13 @@ ul {
         margin-bottom: 50px;
     }
 
+    .home .home-img img {
+        margin: auto;
+        border-radius: 16px;
+        height: 370px;
+    }
+    
+
     #heroimgrevv {
         display: flex;
         flex-direction: column-reverse;
@@ -392,13 +399,34 @@ ul {
     }
 }
 
-@media (max-width:767px) {}
+@media (max-width:767px) {
+
+    .section {
+        background: var(--bg-white);
+        min-height: 100vh;
+        display: block;
+        padding: 0 20px;
+        opacity: 1;
+        position: fixed;
+    }
+
+    .home .home-img img {
+        margin: auto;
+        border-radius: 16px;
+        height: 370px;
+    }
+    
+
+
+}
 
 .highlight-span {
     color: #e74c3c;
     /* Example highlight color */
     font-weight: bold;
 }
+
+
 
 .scroll-text {
     font-style: italic;
