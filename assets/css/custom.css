@@ -1,3 +1,4 @@
+
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
 :root {
@@ -58,10 +59,10 @@ ul {
     background: var(--bg-white);
     min-height: 100vh;
     display: block;
-    padding: 0 30px;
+    padding: 0 100px;
     opacity: 1;
     position: fixed;
-    left: 270px;
+    left: 220px;
     top: 0;
     right: 0;
     bottom: 0;
