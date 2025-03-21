@@ -104,7 +104,7 @@ ul {
     display: block;
     padding: 0 300px;
     opacity: 1;
-    position: fixed;
+    position: center;
     top: 0;
     right: 0;
     bottom: 0;
@@ -223,23 +223,6 @@ ul {
         padding-top: 70px;
     }
 
-    .aside {
-        left: -270px;
-    }
-
-    .aside.open {
-        left: 0;
-    }
-
-    .aside .nav-toggler {
-        display: flex;
-        left: 30px;
-    }
-
-    .aside .nav-toggler.open {
-        left: 300px;
-    }
-
     .section {
         left: 0;
     }
@@ -281,12 +264,6 @@ ul {
         margin: auto;
         border-radius: 16px;
         height: 370px;
-    }
-
-
-    #heroimgrevv {
-        display: flex;
-        flex-direction: column-reverse;
     }
 
     .home-img img {
@@ -786,7 +763,7 @@ ul {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     color: white;
     padding: 4rem 2rem;
-    border-radius: 12px;
+    border-radius: 12px 12px 0px 0px;
 }
 
 .footer-content {
@@ -811,14 +788,14 @@ ul {
 
 /* Social Media Footer */
 .footer-bottom {
-    background-color: #072136; /* Slightly darker blue */
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     padding: 1rem 2rem;
     margin-bottom: 50px;
 
 }
 
 .footer-bottom-content {
-    max-width: fit-content !important;
+    /* max-width: fit-content; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -853,4 +830,8 @@ ul {
         gap: 1rem;
         text-align: center;
     }
+}
+
+.bg-light-for-logo {
+    background-color: #F9FAFB;
 }
