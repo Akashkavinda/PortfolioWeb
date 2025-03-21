@@ -806,3 +806,108 @@
     color: var(--tw-success-inverse)
 }
 
+.btn-2-dark {
+    color: #fff;
+    background-color: var(--tw-dark)
+}
+
+.btn-2-dark.active,
+.btn-2-dark:active,
+.btn-2-dark:focus,
+.btn-2-dark:hover {
+    background-color: var(--tw-dark-active);
+    box-shadow: var(--tw-dark-box-shadow)
+}
+
+.btn-2-outline.btn-2-dark {
+    color: var(--tw-dark);
+    background-color: var(--tw-dark-light);
+    border-color: var(--tw-dark-clarity)
+}
+
+.btn-2-outline.btn-2-dark i {
+    color: var(--tw-dark)
+}
+
+.btn-2-outline.btn-2-dark.active,
+.btn-2-outline.btn-2-dark:active,
+.btn-2-outline.btn-2-dark:focus,
+.btn-2-outline.btn-2-dark:hover {
+    color: var(--tw-dark-inverse);
+    background-color: var(--tw-dark);
+    border-color: var(--tw-dark);
+    box-shadow: none
+}
+
+.btn-2-outline.btn-2-dark.active i,
+.btn-2-outline.btn-2-dark:active i,
+.btn-2-outline.btn-2-dark:focus i,
+.btn-2-outline.btn-2-dark:hover i {
+    color: var(--tw-dark-inverse)
+}
+
+.btn-clear.btn-2-dark {
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--tw-dark)
+}
+
+.btn-clear.btn-2-dark.active,
+.btn-clear.btn-2-dark:active,
+.btn-clear.btn-2-dark:focus,
+.btn-clear.btn-2-dark:hover {
+    color: var(--tw-dark-inverse);
+    background-color: var(--tw-dark);
+    border-color: var(--tw-dark);
+    box-shadow: none
+}
+
+.btn-clear.btn-2-dark.active i,
+.btn-clear.btn-2-dark:active i,
+.btn-clear.btn-2-dark:focus i,
+.btn-clear.btn-2-dark:hover i {
+    color: var(--tw-dark-inverse)
+}
+
+.btn-subtle.btn-2-dark {
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--tw-dark)
+}
+
+.btn-subtle.btn-2-dark i {
+    color: var(--tw-dark)
+}
+
+.btn-subtle.btn-2-dark.active,
+.btn-subtle.btn-2-dark:active,
+.btn-subtle.btn-2-dark:focus,
+.btn-subtle.btn-2-dark:hover {
+    color: var(--tw-dark);
+    background-color: var(--tw-dark-light);
+    border-color: var(--tw-dark-light);
+    box-shadow: none
+}
+
+.btn-subtle.btn-2-dark.active i,
+.btn-subtle.btn-2-dark:active i,
+.btn-subtle.btn-2-dark:focus i,
+.btn-subtle.btn-2-dark:hover i {
+    color: var(--tw-dark)
+}
+
+.btn-2-lg {
+    height: 3rem;
+    padding-inline-start: 1.25rem;
+    padding-inline-end: 1.25rem;
+    font-weight: 500;
+    font-size: .875rem;
+    gap: .5rem
+}
+
+.btn-2-lg.btn-2-icon {
+    width: 3rem
+}
+
+
+
