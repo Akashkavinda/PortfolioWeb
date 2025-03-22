@@ -46,3 +46,20 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      // Toggle "active" class based on visibility
+      entry.target.classList.toggle("active", entry.isIntersecting);
+    });
+  },
+  {
+    rootMargin: "0px",
+    threshold: 0.1, // Trigger when 10% of element is visible
+  }
+);
+
+// Apply observer to all elements with the class
+document
+  .querySelectorAll(".scroll-effect")
+  .forEach((el) => observer.observe(el));
