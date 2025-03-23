@@ -972,11 +972,21 @@ ul {
 }
 
 .row-1 {
-    animation: swipeLeft 40s linear infinite;
+    animation: swipeLeft 30s linear infinite;
 }
 
 .row-2 {
-    animation: swipeRight 35s linear infinite;
+    animation: swipeRight 30s linear infinite;
+}
+
+@media (max-width: 768px) {
+    .row-1 {
+        animation: swipeLeft 15s linear infinite;
+    }
+
+    .row-2 {
+        animation: swipeRight 15s linear infinite;
+    }
 }
 
 .feedback-card {
