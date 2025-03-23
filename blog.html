@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Cpmpatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/style.bundle.css">
+  <link rel="stylesheet" href="assets/css/skins/color-1.css">
+  <link rel="stylesheet" href="assets/css/button.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Akash Palandagama | UX Develoepr</title>
+  <link rel="shortcut icon" href="assets/images/akash-palandagama.jpg">
+
+  <style>
+    :root {
+      --primary-gradient: linear-gradient(45deg, #ff6b6b, #ff8e53);
+      --glass-bg: rgba(255, 255, 255, 0.1);
+      --modern-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      backdrop-filter: blur(16px);
+    }
+
+    .swiper-track {
+      display: flex;
+      height: 100%;
+      position: absolute;
+      animation: swipe 40s linear infinite;
+      gap: 2rem;
+      padding: 0 2rem;
+    }
+
+    @keyframes swipe {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .swiper-container:hover .swiper-track {
+      animation-play-state: paused;
+    }
+
+    .memory-card {
+      flex: 0 0 auto;
+      width: 400px;
+      height: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: var(--modern-shadow);
+    }
+
+    .memory-card:hover {
+      transform: scale(1.05) perspective(1000px) rotateY(5deg);
+      z-index: 2;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .memory-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--primary-gradient);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      mix-blend-mode: overlay;
+    }
+
+    .memory-card:hover::before {
+      opacity: 0.2;
+    }
+
+    .card-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(0.8) brightness(0.9);
+      transition: filter 0.3s ease;
+    }
+
+    .memory-card:hover .card-image {
+      filter: saturate(1.2) brightness(1);
+    }
+
+    .card-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2rem;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+      transform: translateY(100%);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .memory-card:hover .card-content {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .card-title {
+      color: white;
+      margin: 0 0 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .card-meta {
+      display: flex;
+      gap: 1rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.9rem;
+    }
+
+    .card-date {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card-date::before {
+      content: '📅';
+    }
+
+    .card-location::before {
+      content: '📍';
+      margin-right: 0.3rem;
+    }
+
+    /* Touch support */
+    @media (hover: none) {
+      .card-content {
+        transform: translateY(0);
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.6);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- Main Content Start -->
+  <div class="main-content ">
+
+    <!-- Hero Scection Start -->
+    <div class="">
+
+      <div class="swiper-container">
+        <div class="swiper-track">
+          <div class="memory-card">
+            <img src="assets/images/blog/fof-2024.jpg" class="h-400px" alt="Memory">
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <div class="card-meta">
+                <span class="card-date">Date</span>
+                <span class="card-location">Location</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="memory-card">
+            <img src="assets/images/blog/wfh-barista-1.jpg" class="h-550px" alt="Memory">
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <div class="card-meta">
+                <span class="card-date">Date</span>
+                <span class="card-location">Location</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="memory-card">
+            <img src="assets/images/blog/image2.jpg" class="h-400px" alt="Memory">
+            <div class="card-content">
+              <h3 class="card-title">Title</h3>
+              <div class="card-meta">
+                <span class="card-date">Date</span>
+                <span class="card-location">Location</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <!-- Footer -->
+      <footer class="scroll-effect">
+        <div class="footer-main">
+          <div class="footer-content">
+            <h1 class="text-white fs-1">Transform Your Product with Data-Driven UX Design.</h1>
+            <p>From understanding user needs to designing seamless interfaces, I specialize in creating
+              exceptional
+              UX. Let's leverage my skills and local insight to make your product stand out 😊</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <div class="copyright">
+              ©2025 Akash Palandagama
+            </div>
+            <div class="social-links">
+              <a href="#" target="_blank">LinkedIn</a>
+              <a href="#" target="_blank">Dribbble</a>
+              <a href="#" target="_blank">Behance</a>
+              <a href="#" target="_blank">Twitter</a>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+<!-- 
+  <nav class="bottom-nav">
+    <a href="#about" class="nav-item active" data-target="about">
+      <i class="fas fa-smile"></i>
+      <span>About</span>
+    </a>
+    <a href="#about" class="nav-item" data-target="work">
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+      <span>Work</span>
+    </a>
+    <a href="#experence" class="nav-item" data-target="experience">
+      <i class="fas fa-briefcase"></i>
+      <span>Experiences</span>
+    </a>
+    <a href="#contact" class="nav-item" data-target="contact">
+      <i class="fa-solid fa-rocket"></i>
+      <span>Blog</span>
+    </a>
+    <a href="#contact" class="nav-item" data-target="contact">
+      <i class="fas fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </nav> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+  <script src="./assets/js/custom/custom.js"></script>
+  <!-- <script src="assets/js/scripts.bundle.js"></script>
+  <script src="assets/js/widgets.bundle.js"></script> -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <script>
+    // Add touch/swipe support
+    const track = document.querySelector('.swiper-track');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    track.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+
+    track.addEventListener('mouseleave', () => {
+      isDown = false;
+    });
+
+    track.addEventListener('mouseup', () => {
+      isDown = false;
+    });
+
+    track.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - track.offsetLeft;
+      const walk = (x - startX) * 2;
+      track.scrollLeft = scrollLeft - walk;
+    });
+
+    // Mobile touch support
+    track.addEventListener('touchstart', (e) => {
+      isDown = true;
+      startX = e.touches[0].pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+
+    track.addEventListener('touchend', () => {
+      isDown = false;
+    });
+
+    track.addEventListener('touchmove', (e) => {
+      if (!isDown) return;
+      const x = e.touches[0].pageX - track.offsetLeft;
+      const walk = (x - startX) * 2;
+      track.scrollLeft = scrollLeft - walk;
+    });
+  </script>
+
+
+</body>
+
+</html>

@@ -46,6 +46,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -54,7 +55,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    rootMargin: "0px",
+    rootMargin: "60px",
     threshold: 0.1, // Trigger when 10% of element is visible
   }
 );
@@ -63,3 +64,5 @@ const observer = new IntersectionObserver(
 document
   .querySelectorAll(".scroll-effect")
   .forEach((el) => observer.observe(el));
+
+  
