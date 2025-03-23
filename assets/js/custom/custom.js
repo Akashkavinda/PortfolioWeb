@@ -55,8 +55,8 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    rootMargin: "60px",
-    threshold: 0.1, // Trigger when 10% of element is visible
+    rootMargin: "10px",
+    threshold: 0.04, // Trigger when 10% of element is visible
   }
 );
 
