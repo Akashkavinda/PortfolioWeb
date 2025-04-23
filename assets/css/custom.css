@@ -652,10 +652,11 @@ ul {
 
 /* Footer Styles */
 .footer-main {
+    height: 250px;
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     color: white;
     padding: 4rem 2rem;
-    border-radius: 16px 16px 0px 0px;
+    /* border-radius: 16px 16px 0px 0px; */
 }
 
 .footer-content {
@@ -681,8 +682,8 @@ ul {
 /* Social Media Footer */
 .footer-bottom {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
-    padding: 1rem 2rem;
-    margin-bottom: 50px;
+    padding: 2rem 10rem;
+    /* margin-bottom: 50px; */
 
 }
 
