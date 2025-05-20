@@ -52,7 +52,7 @@ body {
 .landing {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 300px !important;
+    padding: 0px 300px !important;
     text-align: center !important;
 }
 
@@ -568,9 +568,14 @@ ul {
 }
 
 .nav-item.active {
-    background: #1a1a1a !important;
-    color: white !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background: #1a1a1a !important;
+  color: white !important;
+  pointer-events: none !important;
+}
+
+.nav-item.active:hover {
+  background: #1a1a1a !important;
+  cursor: default !important;
 }
 
 .nav-item i {
