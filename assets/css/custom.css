@@ -34,11 +34,19 @@ body {
     padding-top: 100px !important;
 }
 
+.container-2 {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px !important;
+    padding-top: 0px !important;
+}
+
 @media (max-width: 1024px) {
     .container {
         padding: 0 40px !important;
         padding-top: 80px !important;
     }
+    
 }
 
 @media (max-width: 768px) {
